@@ -3,7 +3,7 @@
 
   import smoothscroll from "smoothscroll-polyfill";
 
-  import { projects } from "$lib/backend/projects";
+  import projects from "$lib/backend/projects.json";
   import ProjectCard from "./ProjectCard.svelte";
 
   onMount(() => {
@@ -59,7 +59,7 @@
 <div class="pageblock-timeline">
   <div id="timeline-line" />
   <div id="timeline-container">
-    {#each projects as project}
+    {#each projects.projectlist as project}
       <ProjectCard
         {project}
         on:clicked={(dispatchedEvent) =>
