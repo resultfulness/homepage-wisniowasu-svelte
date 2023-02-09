@@ -14,6 +14,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>Dla ucznia - Wiśniowa SU | Samorząd Uczniowski</title>
+</svelte:head>
+
 <div class="title-box">
   <h1 class="title-box-text">DLA UCZNIA</h1>
 </div>

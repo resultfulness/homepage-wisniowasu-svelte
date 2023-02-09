@@ -4,12 +4,13 @@
   import vanillatilt from "vanilla-tilt";
   import scrollreveal from "scrollreveal";
 
-  import { noteworthy, strengths, sections } from "$lib/backend/home";
-
-  // var isMobile = getIsMobile();
-  let isMobile = false;
+  import { aboutUs, noteworthy, strengths, sections } from "$lib/backend/home";
+  import getIsMobile from "$lib/mobileExt";
 
   onMount(() => {
+    var isMobile = getIsMobile();
+    // let isMobile = false;
+
     if (!isMobile) {
       vanillatilt.init(document.querySelector("#logo") as HTMLDivElement, {
         reverse: true, // reverse the tilt direction
@@ -39,6 +40,10 @@
     });
   });
 </script>
+
+<svelte:head>
+  <title>Wiśniowa SU | Samorząd Uczniowski</title>
+</svelte:head>
 
 <div id="logo-container">
   <div id="logo" />
@@ -82,18 +87,7 @@
     <div class="card-image" />
     <h2 class="card-title">O nas</h2>
     <h3 class="card-text">
-      Jesteśmy grupą osób, które połączyła chęć zmian. Mimo różnych kompetencji
-      i spojrzenia na świat, każdy z nas chce osiągnąć ten sam cel.
-      Wykorzystując ten fakt, powstały poszczególne sekcje, pozwalające każdemu
-      realizować się w zakresie, w którym czuje się pewnie i w którym się
-      spełnia. Dzięki temu mamy realny wpływ na to, co dzieje się w szkole i
-      sprawiamy, że jest ona miejscem, w którym potrzeby uczniów naprawdę się
-      liczą. Nie działamy jednak tylko w zakresie szkolnym, ponieważ nie lubimy
-      ograniczeń. Prowadzimy również projekty na skalę Warszawy. Zdajemy sobie
-      sprawę, że do zmian, które chcemy wprowadzać w życie, potrzebny jest
-      zespół. Samorząd tworzą więc ci, którym zależy, by odpowiedzialnie i
-      świadomie planować działania, które udoskonalą i poprawią życie we
-      wspólnocie, jaką jest szkoła.
+      {aboutUs}
     </h3>
   </div>
 </div>
@@ -136,7 +130,7 @@
 </div>
 
 <style lang="scss">
-  @import "../shadows.scss";
+  @import "$lib/scss/shadows.scss";
 
   $imageurl: url("img/team/2019_20/team.jpg?size=1920");
 

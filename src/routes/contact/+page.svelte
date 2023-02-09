@@ -12,6 +12,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>Kontakt - Wiśniowa SU | Samorząd Uczniowski</title>
+</svelte:head>
+
 <div class="title-box">
   <h1 class="title-box-text">KONTAKT</h1>
 </div>
