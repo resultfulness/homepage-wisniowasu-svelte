@@ -70,11 +70,11 @@
     <div id="moving-gradient" />
     <a
       id="team-image"
-      data-href="img/team/2021_22/team.jpg?size=1920"
+      data-href="/img/team/2021_22/team.jpg?size=1920"
       class="progressive replace"
     >
       <img
-        src="img/team/2021_22/team.jpg?size=100"
+        src="/img/team/2021_22/team.jpg?size=100"
         alt="Zespół"
         class="preview"
       />
@@ -132,7 +132,7 @@
 <style lang="scss">
   @import "$lib/scss/shadows.scss";
 
-  $imageurl: url("img/team/2019_20/team.jpg?size=1920");
+  $imageurl: url("/img/team/2019_20/team.jpg?size=1920");
 
   @function strip-unit($number) {
     @if type-of($number) == "number" and not unitless($number) {
@@ -143,7 +143,7 @@
   }
 
   #logo {
-    background-image: url(img/logos/logo_2019.png);
+    background-image: url(/img/logos/logo_2019.png);
     width: 75%;
     resize: both;
     height: 50%;
@@ -372,7 +372,7 @@
 
     &-image {
       grid-area: 1 / 1 / 4 / 2;
-      background-image: url("img/team/2021_22/alt_team.jpg?size=920");
+      background-image: url("/img/team/2021_22/alt_team.jpg?size=920");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;

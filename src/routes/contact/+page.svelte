@@ -44,18 +44,22 @@
     <div class="links">
       <p class="title">Zobacz media</p>
       <a href="https://facebook.wisniowasu.pl">
-        <img src="img/icons/icons8-facebook-50.png" alt="facebook" width="40" />
+        <img
+          src="/img/icons/icons8-facebook-50.png"
+          alt="facebook"
+          width="40"
+        />
       </a>
       <a href="https://instagram.wisniowasu.pl">
         <img
-          src="img/icons/icons8-instagram-50.png"
+          src="/img/icons/icons8-instagram-50.png"
           alt="instagram"
           width="40"
         />
       </a>
       <a href="https://discord.wisniowasu.pl">
         <img
-          src="img/icons/icons8-discord-new-logo-50.png"
+          src="/img/icons/icons8-discord-new-logo-50.png"
           alt="discord"
           width="40"
         />

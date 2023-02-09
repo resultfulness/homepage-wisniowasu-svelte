@@ -14,25 +14,25 @@ wspólnocie, jaką jest szkoła.`;
 export const noteworthy = [
   {
     href: "/projects/",
-    imgSrc: "img/projects/projects.jpg?size=660",
+    imgSrc: "/img/projects/projects.jpg?size=660",
     imgAlt: "Projekty Wiśniowa SU",
     text: "Projekty",
   },
   {
     href: "/wifi/",
-    imgSrc: "img/wifi/wifi_przycisk.jpg",
+    imgSrc: "/img/wifi/wifi_przycisk.jpg",
     imgAlt: "WiFI 2021",
     text: "WiFI 2021",
   },
   {
     href: "https://pasje.wisniowasu.pl/",
-    imgSrc: "img/logos/konferencja.svg",
+    imgSrc: "/img/logos/konferencja.svg",
     imgAlt: "Konferencja Samorządów Warszawskich",
     text: "Konferencja 2020",
   },
   // {
   //   href: "https://mc.wisniowasu.pl/",
-  //   imgSrc: "img/logos/logo_cherrycraft.png?size=660",
+  //   imgSrc: "/img/logos/logo_cherrycraft.png?size=660",
   //   imgAlt: "CherryCraft: Retold",
   //   text: "CherryCraft: Retold",
   // },
@@ -47,7 +47,7 @@ export const strengths = [
         aplikacja szkoły ze wszystkimi potrzebnymi funkcjami, czy chociażby cała
         działalność pozaszkolna samorządu, stawiająca na rozwiązania
         przyszłościowe`,
-    icon: "img/icons/icons8-innovation-100.png",
+    icon: "/img/icons/icons8-innovation-100.png",
     iconAlt: "Innowacja",
   },
   {
@@ -55,7 +55,7 @@ export const strengths = [
     description: `Nasz SU jest instytucją bardzo otwartą na uczniów, którzy zawsze mogą
         skonsultować swoje wątpliwości, lub po prostu wyrazic swoją opinię na
         temat działań SU, a jego opinia nigdy nie zostanie pominięta`,
-    icon: "img/icons/icons8-people-working-together-100.png",
+    icon: "/img/icons/icons8-people-working-together-100.png",
     iconAlt: "Komunikacja",
   },
   {
@@ -65,7 +65,7 @@ export const strengths = [
         i szeroko wykraczające poza działania szkolne. Nasze inicjatywy mają
         zasięg całej Warszawy, a rozwiązania stosowane wewnątrz są oryginalne i
         sprawdzają się w działaniu`,
-    icon: "img/icons/icons8-intelligence-100.png",
+    icon: "/img/icons/icons8-intelligence-100.png",
     iconAlt: "Kreatywność",
   },
   {
@@ -74,7 +74,7 @@ export const strengths = [
         wykonane na 101% możliwości. Nie jest to miejsce w którym rzeczy robi
         się "na odwal", a każdy projekt przed oddaniem musi być dopięty na
         ostatni guzik`,
-    icon: "img/icons/icons8-guarantee-100.png",
+    icon: "/img/icons/icons8-guarantee-100.png",
     iconAlt: "Jakość",
   },
   {
@@ -83,7 +83,7 @@ export const strengths = [
         samorządzie nic nie dzieje się przypadkiem. Każdy ma jasno przydzielone
         zadanie, a każde szkolne wydarzenie ma ustalony harmonogram, w którym
         nie ma miejsca na przypadek`,
-    icon: "img/icons/icons8-hierarchy-100.png",
+    icon: "/img/icons/icons8-hierarchy-100.png",
     iconAlt: "Organizacja",
   },
   {
@@ -93,7 +93,7 @@ export const strengths = [
         boimy się nowych rozwiązań. Dzięki wspraciu i zainteresowaniu
         społeczności szkolnej jako pierwsza szkoła w Warszawie wprowadziliśmy
         eLegitymacje oraz mLegitymacje.`,
-    icon: "img/icons/icons8-smart-card-100.png",
+    icon: "/img/icons/icons8-smart-card-100.png",
     iconAlt: "Nowoczesność",
   },
 ];
@@ -103,14 +103,14 @@ export const sections = [
     name: "Sekcja Organizacyjna",
     description: `Odpowiada za organizację wydarzeń w szkole i poza nią, po cichu pociąga
         za sznurki wszystkiego, co na Wiśniowej wychodzi z inicjatywy uczniów.`,
-    icon: "img/icons/icons8-mind-map-100.png",
+    icon: "/img/icons/icons8-mind-map-100.png",
     iconAlt: "Organizacja",
   },
   // {
   //   name: "Sekcja Debatancka",
   //   description: `Grupa ludzi z zamiłowaniem do dyskusji, zawsze gotowa poratować dobrym argumentem.
   //             Reprezentuje szkołę w Warszawskiej Lidze Debatanckiej.`,
-  //   icon: "img/icons/icons8-communication-100.png",
+  //   icon: "/img/icons/icons8-communication-100.png",
   //   iconAlt: "Debaty",
   // },
   {
@@ -119,7 +119,7 @@ export const sections = [
         merytorycznie poprzez negocjacje, tworzenie aktów prawnych i
         archiwizację wszystkich podejmowanych działań. Zapewnia pozostałym
         sekcjom pole do pracy.`,
-    icon: "img/icons/icons8-job-seeker-100.png",
+    icon: "/img/icons/icons8-job-seeker-100.png",
     iconAlt: "Prawna",
   },
   {
@@ -127,7 +127,7 @@ export const sections = [
     description: `Grupa miłośników technologicznych nowinek, zapewniająca naszej szkole
         wiele nowatorskich rozwiązań, wsparcie techniczne eventów oraz działań
         su w internecie poza sieciami społecznościowymi.`,
-    icon: "img/icons/icons8-maintenance-100.png",
+    icon: "/img/icons/icons8-maintenance-100.png",
     iconAlt: "Technologia",
   },
   {
@@ -135,7 +135,7 @@ export const sections = [
     description: `Projektuje i publikuje treści w mediach społecznościowych co pozwala na
         dobrą komunikacje z uczniami. Ponadto wykonują zdjęcia różnych wydarzeń
         odbywających się w naszej szkole.`,
-    icon: "img/icons/icons8-social-network-100.png",
+    icon: "/img/icons/icons8-social-network-100.png",
     iconAlt: "Media",
   },
   {
@@ -143,7 +143,7 @@ export const sections = [
     description: `Sekcja zrzeszająca twórców z wielu dziedzin sztuki. Umożliwia uczniom
         zaprezentowanie swoich talentów oraz przeprowadza konkursy z nagrodami
         umożliwiając dalszy rozwój w danym kierunku`,
-    icon: "img/icons/icons8-musical-notes-100.png",
+    icon: "/img/icons/icons8-musical-notes-100.png",
     iconAlt: "Sztuka",
   },
 ];
