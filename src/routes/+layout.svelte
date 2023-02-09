@@ -5,7 +5,7 @@
   import "lazysizes";
   import "progressive-image.js";
 
-  import "../main.scss";
+  import "$lib/scss/main.scss";
   import Menu from "$lib/components/Menu.svelte";
   import Footer from "$lib/components/Footer.svelte";
 
@@ -17,9 +17,13 @@
     window.onscroll = function () {
       var viewH = window.innerHeight;
       var scrollPosition = document.scrollingElement?.scrollTop as number;
-      var body = document.body;
 
-      if (scrollPosition / viewH > 0.7) {
+      const isPageScrolledBelowHeader =
+        currentPage === "/"
+          ? scrollPosition / viewH > 0.7
+          : scrollPosition > 170;
+
+      if (isPageScrolledBelowHeader) {
         isNavBg = true;
       } else {
         if (isNavBg) {
@@ -29,10 +33,6 @@
     };
   });
 </script>
-
-<svelte:head>
-  <title>Wiśniowa SU | Samorząd Uczniowski</title>
-</svelte:head>
 
 <Menu {isNavBg} {isNoLogo} {currentPage} />
 <slot />
