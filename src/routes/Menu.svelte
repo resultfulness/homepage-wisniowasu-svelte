@@ -61,7 +61,7 @@
 </header>
 
 <style lang="scss">
-  $logo_url: url(img/logos/logo_title.png);
+  $logo_url: url(/img/logos/logo_title.png);
   $imagew: 312px;
   $imagewandmenu: $imagew + 80px;
   $radius: 30px;

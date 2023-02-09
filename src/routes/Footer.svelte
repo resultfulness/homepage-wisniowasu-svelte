@@ -5,7 +5,7 @@
 <footer>
   <p class="poweredby">powered by</p>
   <a href="/" class="logo">
-    <img src="img/logos/logo_title.png" alt="logo Wiśniowa" width="300" />
+    <img src="/img/logos/logo_title.png" alt="logo Wiśniowa" width="300" />
   </a>
   <div class="icons">
     {#each socials as { identifier, title, href, iconSrc }}
