@@ -3,7 +3,6 @@
   import { page } from "$app/stores";
 
   import "lazysizes";
-  import "progressive-image.js";
 
   import "$lib/scss/main.scss";
   import Menu from "$lib/components/Menu.svelte";

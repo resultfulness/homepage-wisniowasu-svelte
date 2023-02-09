@@ -43,6 +43,14 @@
 
 <svelte:head>
   <title>Wiśniowa SU | Samorząd Uczniowski</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"
+    defer
+  ></script>
 </svelte:head>
 
 <div id="logo-container">
