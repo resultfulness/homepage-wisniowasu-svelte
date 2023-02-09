@@ -1,9 +1,9 @@
 <div class="teampicker">
-  <div class="teampicker_dropdown">
-    <button class="teampicker_dropdown_button"
+  <div class="teampicker-dropdown">
+    <button class="teampicker-dropdown-button"
       >Zobacz SU z wybranego rocznika</button
     >
-    <div class="teampicker_dropdown_content">
+    <div class="teampicker-dropdown-content">
       <a href="/team/">2022/23</a>
       <a href="/team_2021_2022/">2021/22</a>
       <a href="/team_2020_2021/">2020/21</a>
@@ -16,7 +16,7 @@
   .teampicker {
     margin-top: 40px;
 
-    &_dropdown {
+    &-dropdown {
       position: relative;
       display: block;
       margin: 0 auto;
@@ -32,7 +32,7 @@
         position: absolute;
       }
 
-      &_button {
+      &-button {
         background-color: white;
         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
         border: none;
@@ -48,7 +48,7 @@
         z-index: 2;
       }
 
-      &_content {
+      &-content {
         transform: scaleY(0);
         transform-origin: top;
         opacity: 0;
@@ -78,12 +78,12 @@
       }
 
       &:hover {
-        .teampicker_dropdown_content {
+        .teampicker-dropdown-content {
           transform: scaleY(1);
           opacity: 1;
         }
 
-        .teampicker_dropdown_button {
+        .teampicker-dropdown-button {
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
         }
       }
