@@ -1,3 +1,16 @@
+export const aboutUs = `Jesteśmy grupą osób, które połączyła chęć zmian. Mimo różnych kompetencji
+i spojrzenia na świat, każdy z nas chce osiągnąć ten sam cel.
+Wykorzystując ten fakt, powstały poszczególne sekcje, pozwalające każdemu
+realizować się w zakresie, w którym czuje się pewnie i w którym się
+spełnia. Dzięki temu mamy realny wpływ na to, co dzieje się w szkole i
+sprawiamy, że jest ona miejscem, w którym potrzeby uczniów naprawdę się
+liczą. Nie działamy jednak tylko w zakresie szkolnym, ponieważ nie lubimy
+ograniczeń. Prowadzimy również projekty na skalę Warszawy. Zdajemy sobie
+sprawę, że do zmian, które chcemy wprowadzać w życie, potrzebny jest
+zespół. Samorząd tworzą więc ci, którym zależy, by odpowiedzialnie i
+świadomie planować działania, które udoskonalą i poprawią życie we
+wspólnocie, jaką jest szkoła.`;
+
 export const noteworthy = [
   {
     href: "/projects/",
