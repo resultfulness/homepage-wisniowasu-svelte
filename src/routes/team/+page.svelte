@@ -36,6 +36,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>Zespół - Wiśniowa SU | Samorząd Uczniowski</title>
+</svelte:head>
+
 <div class="title-box">
   <h1 class="title-box-text">
     ZESPÓŁ <span class="title-box-date">2022/23</span>
