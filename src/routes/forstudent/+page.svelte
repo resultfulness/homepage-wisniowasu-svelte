@@ -1,14 +1,12 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  import scrollreveal from "scrollreveal";
-
   import { services } from "$lib/backend/forstudent";
   import ServiceCard from "./ServiceCard.svelte";
 
   onMount(() => {
     var items = document.querySelectorAll(".service-card");
-    scrollreveal().reveal(items, {
+    ScrollReveal().reveal(items, {
       easing: "ease-in-out",
       distance: "20px",
     });

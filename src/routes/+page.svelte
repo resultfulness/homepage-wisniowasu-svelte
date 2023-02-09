@@ -2,7 +2,6 @@
   import { onMount } from "svelte";
 
   import vanillatilt from "vanilla-tilt";
-  import scrollreveal from "scrollreveal";
 
   import { aboutUs, noteworthy, strengths, sections } from "$lib/backend/home";
   import getIsMobile from "$lib/mobileExt";
@@ -26,15 +25,15 @@
     var items = document.querySelectorAll(".card");
     var items2 = document.querySelectorAll(".minicard");
     var items3 = document.querySelectorAll(".button");
-    scrollreveal().reveal(items, {
+    ScrollReveal().reveal(items, {
       easing: "ease-in-out",
       distance: "20px",
     });
-    scrollreveal().reveal(items2, {
+    ScrollReveal().reveal(items2, {
       easing: "ease-in-out",
       distance: "20px",
     });
-    scrollreveal().reveal(items3, {
+    ScrollReveal().reveal(items3, {
       easing: "ease-in-out",
       distance: "20px",
     });

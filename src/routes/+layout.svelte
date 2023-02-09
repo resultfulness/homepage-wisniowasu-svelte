@@ -34,6 +34,12 @@
   });
 </script>
 
+<svelte:head>
+  <script
+    src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+  ></script>
+</svelte:head>
+
 <Menu {isNavBtnBackgroundShown} {isLogoNotShown} {currentPage} />
 <slot />
 <Footer />

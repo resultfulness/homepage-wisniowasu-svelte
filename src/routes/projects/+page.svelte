@@ -1,7 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  import scrollreveal from "scrollreveal";
   import smoothscroll from "smoothscroll-polyfill";
 
   import { projects } from "$lib/backend/projects";
@@ -10,7 +9,7 @@
   onMount(() => {
     smoothscroll.polyfill();
 
-    scrollreveal().reveal(document.querySelectorAll(".container"), {
+    ScrollReveal().reveal(document.querySelectorAll(".container"), {
       easing: "ease-in-out",
       distance: "20px",
     });

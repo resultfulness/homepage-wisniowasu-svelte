@@ -1,11 +1,9 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  import scrollreveal from "scrollreveal";
-
   onMount(() => {
     var items = document.querySelectorAll(".slideable");
-    scrollreveal().reveal(items, {
+    ScrollReveal().reveal(items, {
       easing: "ease-in-out",
       distance: "20px",
     });
