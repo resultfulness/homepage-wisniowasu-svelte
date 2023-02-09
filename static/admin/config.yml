@@ -14,7 +14,11 @@ collections:
         label: "project"
         name: "project"
         fields:
-          - { label: "date", name: "date", widget: "string" }
-          - { label: "image", name: "image", widget: "image" }
-          - { label: "title", name: "title", widget: "string" }
-          - { label: "text", name: "text", widget: "markdown" }
+          - label: "Project List"
+            name: "projectlist"
+            widget: "list"
+            fields:
+              - { label: "date", name: "date", widget: "string" }
+              - { label: "image", name: "image", widget: "image" }
+              - { label: "title", name: "title", widget: "string" }
+              - { label: "text", name: "text", widget: "markdown" }
