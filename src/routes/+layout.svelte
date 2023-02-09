@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from "svelte";
+  import { afterNavigate } from "$app/navigation";
   import { page } from "$app/stores";
 
   import "lazysizes";
@@ -9,31 +9,32 @@
   import Menu from "$lib/components/Menu.svelte";
   import Footer from "$lib/components/Footer.svelte";
 
-  const currentPage = $page.route.id as string;
-  let isNavBg = false;
-  let isNoLogo = true;
+  let currentPage: string;
 
-  onMount(() => {
-    window.onscroll = function () {
-      var viewH = window.innerHeight;
-      var scrollPosition = document.scrollingElement?.scrollTop as number;
+  let isNavBtnBackgroundShown = false;
+  let isLogoNotShown = true;
 
-      const isPageScrolledBelowHeader =
-        currentPage === "/"
-          ? scrollPosition / viewH > 0.7
-          : scrollPosition > 170;
+  afterNavigate(() => {
+    currentPage = $page.route.id as string;
 
-      if (isPageScrolledBelowHeader) {
-        isNavBg = true;
-      } else {
-        if (isNavBg) {
-          isNavBg = false;
-        }
+    window.addEventListener("scroll", () => {
+      let scrollPosition = document.scrollingElement?.scrollTop as number;
+
+      function isPageScrolledBelowHeader(scrollPosition: number): boolean {
+        if (currentPage === "/")
+          return scrollPosition / window.innerHeight > 0.7;
+        else return scrollPosition > 170;
       }
-    };
+
+      if (isPageScrolledBelowHeader(scrollPosition)) {
+        isNavBtnBackgroundShown = true;
+      } else if (isNavBtnBackgroundShown) {
+        isNavBtnBackgroundShown = false;
+      }
+    });
   });
 </script>
 
-<Menu {isNavBg} {isNoLogo} {currentPage} />
+<Menu {isNavBtnBackgroundShown} {isLogoNotShown} {currentPage} />
 <slot />
 <Footer />

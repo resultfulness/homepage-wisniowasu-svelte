@@ -1,17 +1,25 @@
 <script lang="ts">
-  export let isNavBg: boolean;
-  export let isNoLogo: boolean;
+  import { routes } from "$lib/backend/routes";
+
+  export let isNavBtnBackgroundShown: boolean;
+  export let isLogoNotShown: boolean;
   export let currentPage: string;
   let isNavActive = false;
-
-  import { routes } from "$lib/backend/routes";
 </script>
 
 <header class="cd-header">
-  <div class="nav-logo" class:nav-bg={isNavBg} class:nologo={isNoLogo}>
+  <div
+    class="nav-logo"
+    class:nav-bg={isNavBtnBackgroundShown}
+    class:nologo={isLogoNotShown}
+  >
     <div class="nav-logo-image" />
   </div>
-  <div class="nav-but-wrap" class:nologo={isNoLogo} class:nav-bg={isNavBg}>
+  <div
+    class="nav-but-wrap"
+    class:nologo={isLogoNotShown}
+    class:nav-bg={isNavBtnBackgroundShown}
+  >
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div
       class="menu-icon hover-target"
@@ -19,17 +27,17 @@
     >
       <span
         class="menu-icon__line menu-icon__line-left"
-        class:nav-bg={isNavBg}
+        class:nav-bg={isNavBtnBackgroundShown}
         class:nav-active={isNavActive}
       />
       <span
         class="menu-icon__line"
-        class:nav-bg={isNavBg}
+        class:nav-bg={isNavBtnBackgroundShown}
         class:nav-active={isNavActive}
       />
       <span
         class="menu-icon__line menu-icon__line_last menu-icon__line-right"
-        class:nav-bg={isNavBg}
+        class:nav-bg={isNavBtnBackgroundShown}
         class:nav-active={isNavActive}
       />
     </div>
@@ -38,6 +46,7 @@
     <div class="nav__content" class:nav-active={isNavActive}>
       <ul class="nav__list">
         {#each [...routes] as [route, title]}
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
           <li
             class="nav__list-item"
             class:nav-active={isNavActive}
