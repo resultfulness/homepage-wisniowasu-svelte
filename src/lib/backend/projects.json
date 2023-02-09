@@ -2,5 +2,19 @@
   "date": "january 1970",
   "image": "/img/uploads/choo-chill.gif",
   "title": "chill",
-  "text": "we decided to chill"
+  "text": "we decided to chill",
+  "projectlist": [
+    {
+      "date": "january 1970",
+      "image": "/img/uploads/choo-chill.gif",
+      "title": "chill 1",
+      "text": "we chilling"
+    },
+    {
+      "date": "january 1971",
+      "image": "/img/uploads/choo-chill.gif",
+      "title": "chill2",
+      "text": "we chilling again"
+    }
+  ]
 }
