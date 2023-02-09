@@ -5,8 +5,8 @@
   import "lazysizes";
 
   import "$lib/scss/main.scss";
-  import Menu from "$lib/components/Menu.svelte";
-  import Footer from "$lib/components/Footer.svelte";
+  import Menu from "./Menu.svelte";
+  import Footer from "./Footer.svelte";
 
   let currentPage: string;
 
