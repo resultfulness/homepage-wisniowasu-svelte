@@ -58,7 +58,7 @@ collections:
             widget: "list"
             fields:
               - { label: "Nazwa atutu", name: "name", widget: "string" }
-              - { label: "Opis", name: "description", widget: "string" }
+              - { label: "Opis", name: "description", widget: "markdown" }
               - { label: "Link do ikony", name: "icon", widget: "image" }
               - { label: "Podpis do ikony", name: "iconAlt", widget: "string" }
           - label: "Nasze Sekcje"
@@ -66,6 +66,6 @@ collections:
             widget: "list"
             fields:
               - { label: "Nazwa sekcji", name: "name", widget: "string" }
-              - { label: "Opis", name: "description", widget: "string" }
+              - { label: "Opis", name: "description", widget: "markdown" }
               - { label: "Link do ikony", name: "icon", widget: "image" }
               - { label: "Podpis do ikony", name: "iconAlt", widget: "string" }
