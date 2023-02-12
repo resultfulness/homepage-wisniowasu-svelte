@@ -34,7 +34,7 @@ collections:
         label: "Wpisy na stronie głównej"
         name: "home"
         fields:
-          - { label: "O nas", name: "aboutUs", widget: "string" }
+          - { label: "O nas", name: "aboutUs", widget: "markdown" }
           - label: "Warte Uwagi"
             name: "noteworthy"
             widget: "list"
