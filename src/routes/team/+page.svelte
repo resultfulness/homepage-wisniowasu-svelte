@@ -4,7 +4,7 @@
   import vanillatilt from "vanilla-tilt";
   import smoothscroll from "smoothscroll-polyfill";
 
-  import { management, chairpeople } from "$lib/content/team";
+  import { management, chairpeople } from "$lib/content/team.json";
   import getIsMobile from "$lib/mobileExt";
   import TeamPicker from "./TeamPicker.svelte";
   import HumanCard from "./HumanCard.svelte";
