@@ -59,3 +59,32 @@ collections:
               - { label: "Opis", name: "description", widget: "markdown" }
               - { label: "Link do ikony", name: "icon", widget: "image" }
               - { label: "Podpis do ikony", name: "iconAlt", widget: "string" }
+  - name: "forstudent"
+    label: "Dla ucznia"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - file: "src/lib/backend/forstudent.json"
+        label: "Wpisy na stronie dla ucznia"
+        name: "forstudent"
+        fields:
+          - label: "Dla ucznia"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Tytuł", name: "name", widget: "string" }
+              - { label: "Opis", name: "description", widget: "string" }
+              - { label: "Link", name: "href", widget: "string" }
+              - { label: "Link do ikony", name: "imgSrc", widget: "image" }
+              - { label: "Tekst przycisku", name: "btnText", widget: "string" }
+              - {
+                  label: "Tag",
+                  name: "tag",
+                  widget: "select",
+                  options: 
+                    - {label: "Brak", value: ""}
+                    - {label: "Nowe", value: "new"}
+                    - {label: "Już wkrótce", value: "soon"},
+                  default: {label: "Brak", value: ""}
+                }
