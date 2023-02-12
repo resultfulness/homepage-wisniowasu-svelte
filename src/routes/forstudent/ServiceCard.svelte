@@ -1,12 +1,7 @@
 <script lang="ts">
-  export let service: {
-    name: string;
-    description: string;
-    href: string;
-    imgSrc: string;
-    btnText: string;
-    tag: string;
-  };
+  import type { ServiceCardData } from "$lib/types";
+
+  export let service: ServiceCardData;
 
   const { name, description, href, imgSrc, btnText, tag } = service;
 </script>
