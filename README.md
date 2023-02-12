@@ -20,4 +20,4 @@ npm run build
 
 ## Backend
 
-example backend in `/src/lib/backend/`, documentation tba
+example content structure in `/src/lib/content/`, documentation tba
