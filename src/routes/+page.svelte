@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
+  import SvelteMarkdown from "svelte-markdown";
   import vanillatilt from "vanilla-tilt";
 
   import {
@@ -100,7 +101,7 @@
     <div class="card-image" />
     <h2 class="card-title">O nas</h2>
     <h3 class="card-text">
-      {aboutUs}
+      <SvelteMarkdown source={aboutUs} />
     </h3>
   </div>
 </div>
