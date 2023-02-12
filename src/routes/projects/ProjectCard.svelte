@@ -1,13 +1,9 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte";
 
-  export let project: {
-    date: string;
-    imgSrc: string;
-    title: string;
-    text: string;
-    imgStyle?: string;
-  };
+  import type { ProjectCardData } from "$lib/types";
+
+  export let project: ProjectCardData;
 
   const { date, imgSrc, imgStyle, title, text } = project;
 

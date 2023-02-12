@@ -1,11 +1,7 @@
 <script lang="ts">
-  export let person: {
-    imgSrc: string;
-    icon: string;
-    title: string;
-    name: string;
-    info: string;
-  };
+  import type { PersonCardData } from "$lib/types";
+
+  export let person: PersonCardData;
 
   const { title, name, info, imgSrc, icon } = person;
 
