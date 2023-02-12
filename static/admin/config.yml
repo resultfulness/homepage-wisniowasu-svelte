@@ -7,14 +7,16 @@ public_folder: "/img"
 
 collections:
   - name: "projects"
-    label: "Projects"
+    label: "Projekty"
     extension: "json"
+    editor:
+      preview: false
     files:
       - file: "src/lib/backend/projects.json"
-        label: "Project List"
+        label: "Lista projektów"
         name: "projectlist"
         fields:
-          - label: "Projects"
+          - label: "Projekty"
             name: "projects"
             widget: "list"
             fields:
@@ -22,26 +24,14 @@ collections:
               - { label: "Link do obrazu", name: "image", widget: "image" }
               - { label: "Tytuł", name: "title", widget: "string" }
               - { label: "Opis", name: "text", widget: "markdown" }
-  - name: "routes"
-    label: "routes"
-    extension: "json"
-    files:
-      - file: "src/lib/backend/routes.json"
-        label: "Route List"
-        name: "routelist"
-        fields:
-          - label: "Route"
-            name: "route"
-            widget: "list"
-            fields:
-              - { label: "Route", name: "route", widget: "string" }
-              - { label: "Route Name", name: "routename", widget: "string" }
   - name: "homepage"
-    label: "Homepage"
+    label: "Strona główna"
     extension: "json"
+    editor:
+      preview: false
     files:
       - file: "src/lib/backend/home.json"
-        label: "Home"
+        label: "Wpisy na stronie głównej"
         name: "home"
         fields:
           - { label: "O nas", name: "aboutUs", widget: "string" }
