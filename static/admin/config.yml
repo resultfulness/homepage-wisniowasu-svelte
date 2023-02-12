@@ -135,3 +135,51 @@ collections:
                     value: new
                   - label: Już wkrótce
                     value: soon
+  - name: team
+    label: Zespół
+    extension: json
+    editor:
+      preview: false
+    files:
+      - file: src/lib/content/team.json
+        label: Wpisy zespołu
+        name: team
+        fields:
+          - label: Zespół
+            name: management
+            widget: list
+            fields:
+              - label: Link do portretu
+                name: imgSrc
+                widget: image
+              - label: Link do ikony
+                name: icon
+                widget: image
+              - label: Stanowisko
+                name: title
+                widget: string
+              - label: Imię Nazwisko
+                name: name
+                widget: string
+              - label: Opis
+                name: info
+                widget: text
+          - label: Przewodniczący Sekcji
+            name: chairpeople
+            widget: list
+            fields:
+              - label: Link do portretu
+                name: imgSrc
+                widget: image
+              - label: Link do ikony
+                name: icon
+                widget: image
+              - label: Nazwa sekcji
+                name: title
+                widget: string
+              - label: Imię Nazwisko
+                name: name
+                widget: string
+              - label: Opis
+                name: info
+                widget: text
