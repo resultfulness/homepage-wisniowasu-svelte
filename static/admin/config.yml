@@ -11,7 +11,7 @@ collections:
     editor:
       preview: false
     files:
-      - file: src/lib/backend/projects.json
+      - file: src/lib/content/projects.json
         label: Lista projektów
         name: projectlist
         fields:
@@ -38,7 +38,7 @@ collections:
     editor:
       preview: false
     files:
-      - file: src/lib/backend/home.json
+      - file: src/lib/content/home.json
         label: Wpisy na stronie głównej
         name: home
         fields:
@@ -99,7 +99,7 @@ collections:
     editor:
       preview: false
     files:
-      - file: src/lib/backend/forstudent.json
+      - file: src/lib/content/forstudent.json
         label: Wpisy na stronie dla ucznia
         name: forstudent
         fields:
