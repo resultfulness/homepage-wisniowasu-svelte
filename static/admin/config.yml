@@ -25,12 +25,13 @@ collections:
               - label: Link do obrazu
                 name: image
                 widget: image
+                media_folder: /static/img/projects
               - label: Tytuł
                 name: title
                 widget: string
               - label: Opis
                 name: text
-                widget: markdown
+                widget: text
   - name: homepage
     label: Strona główna
     extension: json
@@ -69,7 +70,7 @@ collections:
                 widget: string
               - label: Opis
                 name: description
-                widget: markdown
+                widget: text
               - label: Link do ikony
                 name: icon
                 widget: image
@@ -85,7 +86,7 @@ collections:
                 widget: string
               - label: Opis
                 name: description
-                widget: markdown
+                widget: text
               - label: Link do ikony
                 name: icon
                 widget: image
@@ -111,7 +112,7 @@ collections:
                 widget: string
               - label: Opis
                 name: description
-                widget: string
+                widget: text
               - label: Link
                 name: href
                 widget: string
