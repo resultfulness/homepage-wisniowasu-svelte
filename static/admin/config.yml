@@ -11,14 +11,61 @@ collections:
     extension: "json"
     files:
       - file: "src/lib/backend/projects.json"
-        label: "project"
-        name: "project"
+        label: "Project List"
+        name: "projectlist"
         fields:
-          - label: "Project List"
-            name: "projectlist"
+          - label: "Projects"
+            name: "projects"
             widget: "list"
             fields:
-              - { label: "date", name: "date", widget: "string" }
-              - { label: "image", name: "image", widget: "image" }
-              - { label: "title", name: "title", widget: "string" }
-              - { label: "text", name: "text", widget: "markdown" }
+              - { label: "Data", name: "date", widget: "string" }
+              - { label: "Link do obrazu", name: "image", widget: "image" }
+              - { label: "Tytuł", name: "title", widget: "string" }
+              - { label: "Opis", name: "text", widget: "markdown" }
+  - name: "routes"
+    label: "routes"
+    extension: "json"
+    files:
+      - file: "src/lib/backend/routes.json"
+        label: "Route List"
+        name: "routelist"
+        fields:
+          - label: "Route"
+            name: "route"
+            widget: "list"
+            fields:
+              - { label: "Route", name: "route", widget: "string" }
+              - { label: "Route Name", name: "routename", widget: "string" }
+  - name: "homepage"
+    label: "Homepage"
+    extension: "json"
+    files:
+      - file: "src/lib/backend/home.json"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: "O nas", name: "aboutUs", widget: "string" }
+          - label: "Warte Uwagi"
+            name: "noteworthy"
+            widget: "list"
+            fields:
+              - { label: "Link", name: "href", widget: "string" }
+              - { label: "Link do obrazu", name: "imgSrc", widget: "image" }
+              - { label: "Podpis do obrazu", name: "imgAlt", widget: "string" }
+              - { label: "Tytuł", name: "text", widget: "string" }
+          - label: "Nasze Atuty"
+            name: "strengths"
+            widget: "list"
+            fields:
+              - { label: "Nazwa atutu", name: "name", widget: "string" }
+              - { label: "Opis", name: "description", widget: "string" }
+              - { label: "Link do ikony", name: "icon", widget: "image" }
+              - { label: "Podpis do ikony", name: "iconAlt", widget: "string" }
+          - label: "Nasze Sekcje"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Nazwa sekcji", name: "name", widget: "string" }
+              - { label: "Opis", name: "description", widget: "string" }
+              - { label: "Link do ikony", name: "icon", widget: "image" }
+              - { label: "Podpis do ikony", name: "iconAlt", widget: "string" }

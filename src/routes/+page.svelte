@@ -3,7 +3,13 @@
 
   import vanillatilt from "vanilla-tilt";
 
-  import { aboutUs, noteworthy, strengths, sections } from "$lib/backend/home";
+  import {
+    aboutUs,
+    noteworthy,
+    strengths,
+    sections,
+  } from "$lib/backend/home.json";
+
   import getIsMobile from "$lib/mobileExt";
 
   onMount(() => {
