@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  import { services } from "$lib/backend/forstudent.json";
+  import { services } from "$lib/content/forstudent.json";
   import ServiceCard from "./ServiceCard.svelte";
 
   onMount(() => {

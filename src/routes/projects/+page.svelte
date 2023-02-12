@@ -3,7 +3,7 @@
 
   import smoothscroll from "smoothscroll-polyfill";
 
-  import { projects } from "$lib/backend/projects.json";
+  import { projects } from "$lib/content/projects.json";
   import ProjectCard from "./ProjectCard.svelte";
 
   onMount(() => {

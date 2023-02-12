@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { routes } from "$lib/backend/routes.json";
+  import { routes } from "$lib/content/routes.json";
 
   export let isNavBtnBackgroundShown: boolean;
   export let isLogoNotShown: boolean;

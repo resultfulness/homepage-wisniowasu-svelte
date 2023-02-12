@@ -9,7 +9,7 @@
     noteworthy,
     strengths,
     sections,
-  } from "$lib/backend/home.json";
+  } from "$lib/content/home.json";
 
   import getIsMobile from "$lib/mobileExt";
 
