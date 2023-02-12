@@ -1,0 +1,10 @@
+{
+  "routes": [
+    ["/", "Strona główna"],
+    ["/team", "Zespół"],
+    ["/projects", "Projekty"],
+    ["/forstudent", "Dla ucznia"],
+    ["/wifi", "WiFI"],
+    ["/contact", "Kontakt"]
+  ]
+}

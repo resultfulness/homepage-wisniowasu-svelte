@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { socials } from "$lib/backend/footer";
+  import { socials } from "$lib/content/footer";
 </script>
 
 <footer>

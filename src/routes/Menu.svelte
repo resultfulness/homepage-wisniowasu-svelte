@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { routes } from "$lib/backend/routes";
+  import { routes } from "$lib/content/routes.json";
 
   export let isNavBtnBackgroundShown: boolean;
   export let isLogoNotShown: boolean;
@@ -45,7 +45,7 @@
   <div class="nav" class:nav-active={isNavActive}>
     <div class="nav__content" class:nav-active={isNavActive}>
       <ul class="nav__list">
-        {#each [...routes] as [route, title]}
+        {#each routes as [route, title]}
           <!-- svelte-ignore a11y-click-events-have-key-events -->
           <li
             class="nav__list-item"
