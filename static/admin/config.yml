@@ -103,7 +103,7 @@ collections:
         label: Wpisy na stronie dla ucznia
         name: forstudent
         fields:
-          - label: Dla ucznia
+          - label: Wpisy
             name: services
             widget: list
             fields:
@@ -145,7 +145,7 @@ collections:
         label: Wpisy zespołu
         name: team
         fields:
-          - label: Zespół
+          - label: Członek zespołu
             name: management
             widget: list
             fields:
