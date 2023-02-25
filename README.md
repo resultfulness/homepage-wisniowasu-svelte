@@ -21,3 +21,5 @@ npm run build
 ## Backend
 
 example content structure in `/src/lib/content/`, documentation tba
+
+on vercel https://homepage-wisniowasu-svelte.vercel.app
